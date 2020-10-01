@@ -20,6 +20,10 @@ bot.on('message', message => {
         message.delete();
         message.author.send("**Das Wort Hurensohn darf nicht auf den Server verwendet werden**\nLG Das Team")
     }
+    if (msg.includes('HURE')){
+        message.delete();
+        message.author.send("**Das Wort Hure darf nicht auf den Server verwendet werden**\nLG Das Team")
+    }
 });
 
 bot.on('ready', () => {
